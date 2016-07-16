@@ -9,6 +9,7 @@ output:
 ## > Loading and Preprocessing data
 
 ```{r echo=TRUE}
+unzip("activity.zip")
 activity<-read.csv("activity.csv",colClasses = c("steps"="integer","date"="character","interval"="integer"))
 head(activity)
 library(lubridate)
